@@ -258,8 +258,9 @@ git_url: https://github.com/jluethi/2024-ome-ngff-workflows-hackathon
 # bottom of the generated paper (typically the first two authors):
 authors_short: Lüthi \emph{et al.}
 ---
+  
 
-* Corresponding authors: josh@openmicroscopy.org, norman.rzepka@scalableminds.com, christian.tischer@embl.de, ulman@fi.muni.cz, virginie.uhlmann@mls.uzh.ch
+\* Corresponding authors: josh@openmicroscopy.org, norman.rzepka@scalableminds.com, christian.tischer@embl.de, ulman@fi.muni.cz, virginie.uhlmann@mls.uzh.ch
 
 ---
 
@@ -278,12 +279,18 @@ The 2024 OME-NGFF Workflows Hackathon was focused on 4 main topics (see Figure 1
 In this report, we provide a detailed account of the results of the hackathon.
 
 ![**Figure 1:** Overview of hackathon topics by section of the article in the results below](figures/figure1.png)
-![**Figure 2](figures/figure2.png)
-![**Figure 3](figures/figure3.png)
-![**Figure 4](figures/figure4.png)
-![**Figure 5](figures/figure5.png)
-![**Figure 6](figures/figure6.png)
-![**Figure 7](figures/figure7.png)
+
+![**Figure 2: Organisation of chunked data and json metadata in a typical OME-Zarr 0.4, based on Zarr V2 (figure derived from work by Trevor Manz)](figures/figure2.png)
+
+![**Figure 3: OME-Zarr 0.5 using the Zarr v3 format. (Figure based on original work by Trevor Manz7)](figures/figure3.png)
+
+![**Figure 4: Fractal OME-Zarr task model](figures/figure4.png)
+
+![**Figure 5: Running the Fractal thresholding tasks in 4 different frameworks. A) Running the thresholding task in a Fractal workflow in the Fractal web interface. B) Configuration to run the thresholding task in a Nextflow workflow. C) Configuration for running the thresholding task via Snakemake. D) Running the thresholding task via a napari plugin.](figures/figure5.png)
+
+![**Figure 6: Drag & drop interface for OME-Zarrs in FIJI](figures/figure6.png)
+
+![**Figure 7: The example data used in benchmarks](figures/figure7.png)
 
 
 Tables:
@@ -305,10 +312,10 @@ Tables:
 
 | Framework  | Hackathon Repository  | Implementation strategy  | Open questions  |
 |------------|----------------------|--------------------------|-----------------|
-| **Fractal** | [Fractal task template](https://github.com/fractal-analytics-platform/fractal-tasks-template) | Set up a full local Fractal setup using the full-stack example in [Fractal containers](https://github.com/fractal-analytics-platform/fractal-containers). Run tasks as a Fractal workflow. | - |
-| **Nextflow** | [nf-core compatible Nextflow workflow for Fractal tasks](https://github.com/cellgeni/nf-fractal-demo) | Containerize Fractal tasks using Docker/Singularity containers. Encode input parameters into a JSON file. Directly provide parameters using Nextflow-native configurations. | Handling task output JSON files. |
+| **Fractal** | [Fractal task template](https://github.com/fractal-analytics-platform/fractal-tasks-template) | Set up a full local Fractal setup using the full-stack example in [Fractal containers](https://github.com/fractal-analytics-platform/fractal-containers).  Run tasks as a Fractal workflow. | - |
+| **Nextflow** | [nf-core compatible Nextflow workflow for Fractal tasks](https://github.com/cellgeni/nf-fractal-demo) | Containerize Fractal tasks using Docker/Singularity containers.  Encode input parameters into a JSON file.  Directly provide parameters using Nextflow-native configurations. | Handling task output JSON files. |
 | **Snakemake** | [Snakemake wrapper for the thresholding task](https://github.com/d-goryslavets/snakemake-thresholding) <br> [napari plugin for Snakemake workflow](https://github.com/d-goryslavets/snakemake-thresholding-napari-plugin) | Create a Snakemake wrapper for Fractal OME-Zarr tasks. Use Conda for environment handling. Pass in parameters via a YAML file. Add a napari GUI to interactively run the task and explore the results. | - |
-| **napari** | [napari plugin prototype](https://github.com/krentzd/napari-workflow-tasks/) | Access on-disk OME-Zarr based on metadata added to the viewer by the napari-ome-zarr plugin. Run processing in the background. Load results back. | Knowing the expected task output to display. <br> [Handling the environments in which the tasks are installed and run](https://github.com/krentzd/napari-workflow-tasks/issues/1). |
+| **napari** | [napari plugin prototype](https://github.com/krentzd/napari-workflow-tasks/) | - Access on-disk OME-Zarr based on metadata added to the viewer by the napari-ome-zarr plugin.  - Run processing in the background. <br> - Load results back. | - Knowing the expected task output to display. <br> [Handling the environments in which the tasks are installed and run](https://github.com/krentzd/napari-workflow-tasks/issues/1). |
 
 
 # Formatting
