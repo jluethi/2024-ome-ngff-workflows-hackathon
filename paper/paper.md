@@ -273,7 +273,7 @@ The 2024 OME-NGFF Workflows Hackathon was focused on 4 main topics (see Figure 1
 
 In this report, we provide a detailed account of the results of the hackathon.
 
-![**Figure 1:** Overview of hackathon topics by section of the article in the results below](./biohackrxiv.png)
+![**Figure 1:** Overview of hackathon topics by section of the article in the results below](./figures/figure1.png)
 
 # Formatting
 
