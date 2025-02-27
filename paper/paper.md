@@ -108,7 +108,7 @@ authors:
   - name: Jonas Windhager
     orcid: 0000-0002-2111-5291
     affiliation: 31
-  - name: Kevin A Yamauchi
+  - name: Kevin A. Yamauchi
     orcid: 0000-0002-7818-1388
     affiliation: 32, 33
   - name: Igor Zubarev
@@ -259,6 +259,9 @@ git_url: https://github.com/jluethi/2024-ome-ngff-workflows-hackathon
 authors_short: Lüthi \emph{et al.}
 ---
 
+* Corresponding authors: josh@openmicroscopy.org, norman.rzepka@scalableminds.com, christian.tischer@embl.de, ulman@fi.muni.cz, virginie.uhlmann@mls.uzh.ch
+
+---
 
 # 1. Introduction
 
@@ -275,6 +278,38 @@ The 2024 OME-NGFF Workflows Hackathon was focused on 4 main topics (see Figure 1
 In this report, we provide a detailed account of the results of the hackathon.
 
 ![**Figure 1:** Overview of hackathon topics by section of the article in the results below](figures/figure1.png)
+![**Figure 2](figures/figure2.png)
+![**Figure 3](figures/figure3.png)
+![**Figure 4](figures/figure4.png)
+![**Figure 5](figures/figure5.png)
+![**Figure 6](figures/figure6.png)
+![**Figure 7](figures/figure7.png)
+
+
+Tables:
+
+| Zarr reader   | Programming language | Single archive file support | Relevant OME-Zarr implementations |
+|--------------|----------------------|-----------------------------|----------------------------------|
+| zarr-python | Python               | Yes, using ZipStore (Zarr v2) or fsspec path chaining | Zarr backend for ome-zarr-py, bioio, aicsimageio, xarray |
+| Zarrita.js  | Javascript           | Yes, using ZipFileStore      | - |
+| zarrs       | Rust                 | Yes, using ZipStorageAdapter (zarrs_zip crate) | - |
+| Zarr.jl     | Julia                | Yes, using ZipStore          | - |
+| Tensorstore | C++ / Python         | Potentially, using Key-Value Store driver | - |
+| JZarr       | Java                 | Planned                      | Zarr backend for OMEZarrReader, Bio-Formats |
+| n5-zarr     | Java                 | No                            | - |
+| GDAL        | C++ and others       | No                            | - |
+| Zarr.js     | Javascript           | No                            | - |
+| Pizzarr     | R                    | No                            | - |
+| Rarr        | R                    | No                            | - |
+
+
+| Framework  | Hackathon Repository  | Implementation strategy  | Open questions  |
+|------------|----------------------|--------------------------|-----------------|
+| **Fractal** | [Fractal task template](https://github.com/fractal-analytics-platform/fractal-tasks-template) | Set up a full local Fractal setup using the full-stack example in [Fractal containers](https://github.com/fractal-analytics-platform/fractal-containers). Run tasks as a Fractal workflow. | - |
+| **Nextflow** | [nf-core compatible Nextflow workflow for Fractal tasks](https://github.com/cellgeni/nf-fractal-demo) | Containerize Fractal tasks using Docker/Singularity containers. Encode input parameters into a JSON file. Directly provide parameters using Nextflow-native configurations. | Handling task output JSON files. |
+| **Snakemake** | [Snakemake wrapper for the thresholding task](https://github.com/d-goryslavets/snakemake-thresholding) <br> [napari plugin for Snakemake workflow](https://github.com/d-goryslavets/snakemake-thresholding-napari-plugin) | Create a Snakemake wrapper for Fractal OME-Zarr tasks. Use Conda for environment handling. Pass in parameters via a YAML file. Add a napari GUI to interactively run the task and explore the results. | - |
+| **napari** | [napari plugin prototype](https://github.com/krentzd/napari-workflow-tasks/) | Access on-disk OME-Zarr based on metadata added to the viewer by the napari-ome-zarr plugin. Run processing in the background. Load results back. | Knowing the expected task output to display. <br> [Handling the environments in which the tasks are installed and run](https://github.com/krentzd/napari-workflow-tasks/issues/1). |
+
 
 # Formatting
 
