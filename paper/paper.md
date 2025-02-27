@@ -314,20 +314,38 @@ Tables:
 
 | Framework  | Hackathon Repository  | Implementation strategy  | Open questions  |
 |------------|----------------------|--------------------------|-----------------|
-| **Fractal** | [Fractal task template](https://github.com/fractal-analytics-platform/fractal-tasks-template) | Set up a full local Fractal setup using the full-stack example in [Fractal containers](https://github.com/fractal-analytics-platform/fractal-containers).  
-  Run tasks as a Fractal workflow. | - |
-| **Nextflow** | [nf-core compatible Nextflow workflow for Fractal tasks](https://github.com/cellgeni/nf-fractal-demo) | - Containerize Fractal tasks using Docker/Singularity containers  
-  - Encode input parameters into a JSON file  
-  - Directly provide parameters using Nextflow-native configurations | Handling task output JSON files |
-| **Snakemake** | [Snakemake wrapper for the thresholding task](https://github.com/d-goryslavets/snakemake-thresholding)  
-  [napari plugin for Snakemake workflow](https://github.com/d-goryslavets/snakemake-thresholding-napari-plugin) | - Create a Snakemake wrapper for Fractal OME-Zarr tasks  
-  - Use Conda for environment handling  
-  - Pass in parameters via a YAML file  
-  - Add a napari GUI to interactively run the task and explore the results | - |
-| **napari** | [napari plugin prototype](https://github.com/krentzd/napari-workflow-tasks/) | - Access on-disk OME-Zarr based on metadata added to the viewer by the napari-ome-zarr plugin  
-  - Run processing in the background  
-  - Load results back | - Knowing the expected task output to display  
-  - [Handling the environments in which the tasks are installed and run](https://github.com/krentzd/napari-workflow-tasks/issues/1) |
+| **Fractal** | [Fractal task template](https://github.com/fractal-analytics-platform/fractal-tasks-template) | '''  
+Set up a full local Fractal setup using the full-stack example in [Fractal containers](https://github.com/fractal-analytics-platform/fractal-containers).  
+Run tasks as a Fractal workflow.  
+''' | '''  
+-  
+''' |
+| **Nextflow** | [nf-core compatible Nextflow workflow for Fractal tasks](https://github.com/cellgeni/nf-fractal-demo) | '''  
+- Containerize Fractal tasks using Docker/Singularity containers  
+- Encode input parameters into a JSON file  
+- Directly provide parameters using Nextflow-native configurations  
+''' | '''  
+- Handling task output JSON files  
+''' |
+| **Snakemake** | '''  
+[Snakemake wrapper for the thresholding task](https://github.com/d-goryslavets/snakemake-thresholding)  
+[napari plugin for Snakemake workflow](https://github.com/d-goryslavets/snakemake-thresholding-napari-plugin)  
+''' | '''  
+- Create a Snakemake wrapper for Fractal OME-Zarr tasks  
+- Use Conda for environment handling  
+- Pass in parameters via a YAML file  
+- Add a napari GUI to interactively run the task and explore the results  
+''' | '''  
+-  
+''' |
+| **napari** | [napari plugin prototype](https://github.com/krentzd/napari-workflow-tasks/) | '''  
+- Access on-disk OME-Zarr based on metadata added to the viewer by the napari-ome-zarr plugin  
+- Run processing in the background  
+- Load results back  
+''' | '''  
+- Knowing the expected task output to display  
+- [Handling the environments in which the tasks are installed and run](https://github.com/krentzd/napari-workflow-tasks/issues/1)  
+''' |
 
 
 # Formatting
