@@ -312,40 +312,78 @@ Tables:
 | Rarr        | R                    | No                            | - |
 
 
-| Framework  | Hackathon Repository  | Implementation strategy  | Open questions  |
-|------------|----------------------|--------------------------|-----------------|
-| **Fractal** | [Fractal task template](https://github.com/fractal-analytics-platform/fractal-tasks-template) | '''  
-Set up a full local Fractal setup using the full-stack example in [Fractal containers](https://github.com/fractal-analytics-platform/fractal-containers).  
-Run tasks as a Fractal workflow.  
-''' | '''  
--  
-''' |
-| **Nextflow** | [nf-core compatible Nextflow workflow for Fractal tasks](https://github.com/cellgeni/nf-fractal-demo) | '''  
-- Containerize Fractal tasks using Docker/Singularity containers  
-- Encode input parameters into a JSON file  
-- Directly provide parameters using Nextflow-native configurations  
-''' | '''  
-- Handling task output JSON files  
-''' |
-| **Snakemake** | '''  
-[Snakemake wrapper for the thresholding task](https://github.com/d-goryslavets/snakemake-thresholding)  
-[napari plugin for Snakemake workflow](https://github.com/d-goryslavets/snakemake-thresholding-napari-plugin)  
-''' | '''  
-- Create a Snakemake wrapper for Fractal OME-Zarr tasks  
-- Use Conda for environment handling  
-- Pass in parameters via a YAML file  
-- Add a napari GUI to interactively run the task and explore the results  
-''' | '''  
--  
-''' |
-| **napari** | [napari plugin prototype](https://github.com/krentzd/napari-workflow-tasks/) | '''  
-- Access on-disk OME-Zarr based on metadata added to the viewer by the napari-ome-zarr plugin  
-- Run processing in the background  
-- Load results back  
-''' | '''  
-- Knowing the expected task output to display  
-- [Handling the environments in which the tasks are installed and run](https://github.com/krentzd/napari-workflow-tasks/issues/1)  
-''' |
+<table>
+  <thead>
+    <tr>
+      <th>Framework</th>
+      <th>Hackathon Repository</th>
+      <th>Implementation Strategy</th>
+      <th>Open Questions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Fractal</b></td>
+      <td><a href="https://github.com/fractal-analytics-platform/fractal-tasks-template">Fractal task template</a></td>
+      <td>
+        <ul>
+          <li>Set up a full local Fractal setup using the full-stack example in <a href="https://github.com/fractal-analytics-platform/fractal-containers">Fractal containers</a></li>
+          <li>Run tasks as a Fractal workflow</li>
+        </ul>
+      </td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><b>Nextflow</b></td>
+      <td><a href="https://github.com/cellgeni/nf-fractal-demo">nf-core compatible Nextflow workflow for Fractal tasks</a></td>
+      <td>
+        <ul>
+          <li>Containerize Fractal tasks using Docker/Singularity containers</li>
+          <li>Encode input parameters into a JSON file</li>
+          <li>Directly provide parameters using Nextflow-native configurations</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Handling task output JSON files</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Snakemake</b></td>
+      <td>
+        <a href="https://github.com/d-goryslavets/snakemake-thresholding">Snakemake wrapper for the thresholding task</a><br>
+        <a href="https://github.com/d-goryslavets/snakemake-thresholding-napari-plugin">napari plugin for Snakemake workflow</a>
+      </td>
+      <td>
+        <ul>
+          <li>Create a Snakemake wrapper for Fractal OME-Zarr tasks</li>
+          <li>Use Conda for environment handling</li>
+          <li>Pass in parameters via a YAML file</li>
+          <li>Add a napari GUI to interactively run the task and explore the results</li>
+        </ul>
+      </td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><b>napari</b></td>
+      <td><a href="https://github.com/krentzd/napari-workflow-tasks/">napari plugin prototype</a></td>
+      <td>
+        <ul>
+          <li>Access on-disk OME-Zarr based on metadata added to the viewer by the napari-ome-zarr plugin</li>
+          <li>Run processing in the background</li>
+          <li>Load results back</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Knowing the expected task output to display</li>
+          <li><a href="https://github.com/krentzd/napari-workflow-tasks/issues/1">Handling the environments in which the tasks are installed and run</a></li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 
 # Formatting
