@@ -43,7 +43,7 @@ authors:
     orcid: 0000-0001-5414-8906
     affiliation: 9
   - name: Oane Gros
-    orcid: 
+    orcid: 0000-0003-2459-9858
     affiliation: 10
   - name: Stefan Hahmann
     orcid: 0000-0002-8145-7090
@@ -55,7 +55,7 @@ authors:
     orcid: 0000-0002-6780-0235
     affiliation: 12
   - name: Rachael Huxford
-    orcid: 
+    orcid: 0009-0009-2686-5022
     affiliation: 13
   - name: Daniel Krentzel
     orcid: 0000-0002-6234-7259
@@ -70,13 +70,13 @@ authors:
     orcid: 0000-0001-9475-3756
     affiliation: 18
   - name: Franziska Moos
-    orcid: 
+    orcid: 0000-0002-1852-983X
     affiliation: 7
   - name: Filip Mroz
     orcid: 0009-0002-7021-5325
     affiliation: 19
   - name: Bugra Özdemir
-    orcid: 
+    orcid: 0000-0001-9823-0581
     affiliation: 20
   - name: Benjamin Pavie
     orcid: 0000-0002-0249-3844
@@ -85,13 +85,13 @@ authors:
     orcid: 0000-0001-5542-1302
     affiliation: 22
   - name: Maximilian Schulz
-    orcid: 
+    orcid: 0009-0006-3710-6492
     affiliation: 23
   - name: Leonardo Schwarz
     orcid: 0009-0003-1828-6924
     affiliation: 24
   - name: Hannes M. Spitz
-    orcid: 
+    orcid: 0009-0003-0010-1995
     affiliation: 25
   - name: David Stansby
     orcid: 0000-0002-1365-1908
@@ -260,31 +260,20 @@ authors_short: Lüthi \emph{et al.}
 ---
 
 
-# Introduction
+# 1. Introduction
 
-As part of the BioHackathon Europe 2023, we here report...
+The past years have seen growing community interest in the standardization of open and findable, accessible, interoperable, and reusable (FAIR)[wilkinson_fair_2016] image data formats for bioimaging. A key effort in this space is the next generation file format OME-Zarr[moore_ome-ngff_2021]. Since its first activities in 2018, the international OME-Zarr community has grown considerably and scientists from all over the world have been contributing to the file format specification, adding support to image viewers and building tooling around OME-Zarr[moore_ome-zarr_2023]. The OME-Zarr format combines a general-purpose data format for storing large n-dimensional arrays (Zarr) with a community-defined specification for bioimage metadata representation (Next Generation File Format, NGFF). Building upon the chunked Zarr data format, OME-Zarr has specifically been designed for the storage and analysis of large bioimaging datasets in the cloud (i.e. object storage). In 2023, we organised a first [“Next generation bioimage analysis workflows hackathon”](https://www.biovisioncenter.uzh.ch/en/events/2023/hackathon_23.html) that aimed at bringing the OME-Zarr community together both to move forward on the file format specification and to implement essential supporting resources. Given the [success of this event](https://forum.image.sc/t/outcomes-of-the-next-generation-bioimage-analysis-workflows-hackathon/88733), we decided to organize an [“OME-NGFF Workflows Hackathon at the end of 2024”](https://www.ema.uzh.ch/de/register/ome-ngff-workflows-hackathon-2024.html). 
 
-## Author information
+**Goals:**
+The 2024 OME-NGFF Workflows Hackathon was focused on 4 main topics (see Figure 1): 
+- The OME-Zarr specification, which aimed at working on the specification itself as well as clarifying the process of how the community contributes changes to the current specification. We specifically discussed the new request for comment (RFC) process, storing OME-Zarr data in individual ZIP files, collections, and transformations.
+- The usage of OME-Zarr in workflows, which explored how to develop interoperable OME-Zarr processing units and how to compose them into reusable workflows.
+- OME-Zarr in the Java ecosystem, which worked on incorporating support for [Zarr v3](https://zarr-specs.readthedocs.io/en/latest/v3/core/v3.0.html) in Java Zarr libraries and on making it possible to open OME-Zarr images in the popular Java-based image analysis software Fiji4.
+- OME-Zarr in the Python ecosystem, which focused on compiling an overview of available Python tools for OME-Zarr handling, finding ways to collaborate on shared libraries, testing the performance of processing workflows using OME-Zarrs depending on chunking and sharding configurations, and working on representing transformations in Xarray5.
 
-Information about the authors is given in the [YAML](https://en.wikipedia.org/wiki/YAML) format at the top of this template.
-For authors you provide their names, their affiliations, and ideally their [ORCID](https://orcid.org/)
-identifier. For affiliations, the [Research Organization Registry](https://ror.org/) (ROR) identifier can be given.
-For example, this is the author information for this template:
+In this report, we provide a detailed account of the results of the hackathon.
 
-```yaml
-authors:
-  - name: First Author
-    affiliation: 1
-  - name: Last Author
-    orcid: 0000-0000-0000-0000
-    affiliation: 2
-affiliations:
-  - name: First Affiliation
-    index: 1
-  - name: ELIXIR Europe
-    ror: 044rwnt51
-    index: 2
-```
+![**Figure 1:** Overview of hackathon topics by section of the article in the results below](./biohackrxiv.png)
 
 # Formatting
 
