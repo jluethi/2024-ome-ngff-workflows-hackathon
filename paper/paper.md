@@ -56,87 +56,87 @@ authors:
     affiliation: 9
   - name: Dmytro Horyslavets
     orcid: 0000-0002-6780-0235
-    affiliation: 12
+    affiliation: 12, 13
   - name: Rachael Huxford
     orcid: 0009-0009-2686-5022
-    affiliation: 13
+    affiliation: 14
   - name: Daniel Krentzel
     orcid: 0000-0002-6234-7259
-    affiliation: 14
+    affiliation: 15
   - name: Tong Li
     orcid: 0000-0002-8240-4476
-    affiliation: 15
+    affiliation: 16
   - name: Luca Marconato
     orcid: 0000-0003-3198-1326
-    affiliation: 16, 17
+    affiliation: 17, 18
   - name: Matthew McCormick
     orcid: 0000-0001-9475-3756
-    affiliation: 18
+    affiliation: 19
   - name: Franziska Moos
     orcid: 0000-0002-1852-983X
     affiliation: 7
   - name: Filip Mroz
     orcid: 0009-0002-7021-5325
-    affiliation: 19
+    affiliation: 20
   - name: Bugra Özdemir
     orcid: 0000-0001-9823-0581
-    affiliation: 20
+    affiliation: 21
   - name: Benjamin Pavie
     orcid: 0000-0002-0249-3844
-    affiliation: 21
+    affiliation: 22
   - name: Eric Perlman
     orcid: 0000-0001-5542-1302
-    affiliation: 22
+    affiliation: 23
   - name: Maximilian Schulz
     orcid: 0009-0006-3710-6492
-    affiliation: 23
+    affiliation: 24
   - name: Leonardo Schwarz
     orcid: 0009-0003-1828-6924
-    affiliation: 24
+    affiliation: 25
   - name: Hannes M. Spitz
     orcid: 0009-0003-0010-1995
-    affiliation: 25
+    affiliation: 26
   - name: David Stansby
     orcid: 0000-0002-1365-1908
-    affiliation: 26, 27
+    affiliation: 27, 28
   - name: Fabio Steffen
     orcid: 0000-0001-8795-2212
-    affiliation: 28
+    affiliation: 29
   - name: Szymon Stoma
     orcid: 0000-0001-5127-8553
-    affiliation: 19, 29
+    affiliation: 20, 30
   - name: Flurin Sturzenegger
     orcid: 0009-0000-1306-6605
-    affiliation: 30
+    affiliation: 31
   - name: Wouter-Michiel Vierdag
     orcid: 0000-0003-1666-5421
-    affiliation: 16, 31
+    affiliation: 17, 32
   - name: Jonas Windhager
     orcid: 0000-0002-2111-5291
-    affiliation: 32
+    affiliation: 33
   - name: Kevin A. Yamauchi
     orcid: 0000-0002-7818-1388
-    affiliation: 33, 34
+    affiliation: 34, 35
   - name: Igor Zubarev
-    orcid: 
+    orcid: 0009-0008-6705-0949
     affiliation: 8
   - name: Josh Moore
     orcid: 0000-0003-4028-811X
-    affiliation: 35, 36, 40
+    affiliation: 36, 37, 41
   - name: Norman Rzepka
     orcid: 0000-0002-8168-7929
-    affiliation: 25, 40
+    affiliation: 26, 41
   - name: Christian Tischer
     orcid: 0000-0003-4105-1990
-    affiliation: 37, 40
+    affiliation: 38, 41
   - name: Vladimir Ulman
     orcid: 0000-0002-4270-7982
-    affiliation: 38, 39, 40
+    affiliation: 39, 40, 41
   - name: Virginie Uhlmann
     orcid: 0000-0002-2859-9241
-    affiliation: 1, 40
+    affiliation: 1, 41
 affiliations:
-  - name: BioVisionCenter, University of Zurich, Zurich, Switzerland
+  - name: BioVisionCenter, University of Zurich, Zurich 8057, Switzerland
     ror: 02crff812
     index: 1
   - name: Image Analysis Hub, Institut Pasteur, Université Paris Cité, 75015 Paris, France
@@ -171,89 +171,92 @@ affiliations:
   - name: Institute of Molecular Biology and Genetics of NASU, Ukraine
     ror: 01rqyr540
     index: 12
+  - name: Kyiv Academic University
+    ror: 01rqyr540
+    index: 13
   - name: Minnesota Supercomputing Institute, University of Minnesota, Minneapolis, MN, USA
     ror: 
-    index: 13
+    index: 14
   - name: Imaging and Modeling Unit, Institut Pasteur, Paris, France
     ror: 0495fxg12
-    index: 14
+    index: 15
   - name: Wellcome Sanger Institute
     ror: 05cy4wa09
-    index: 15
+    index: 16
   - name: European Molecular Biology Laboratory (EMBL), Genome Biology Unit, Heidelberg, Germany
     ror: 03mstc592
-    index: 16
+    index: 17
   - name: Division of Computational Genomics and System Genetics, German Cancer Research Center (DKFZ)
     ror: 04cdgtt98
-    index: 17
+    index: 18
   - name: Insight Software Consortium, North Carolina, USA
     ror: 
-    index: 18
+    index: 19
   - name: Histopixel, Poland
     ror: 
-    index: 19
+    index: 20
   - name: Euro-BioImaging, European Molecular Biology Laboratory (EMBL), Heidelberg, Germany
     ror: 
-    index: 20
+    index: 21
   - name: VIB Bio Imaging Core, Gent 9052, Leuven 3000, Belgium
     ror: 05yn67m85
-    index: 21
+    index: 22
   - name: Yikes LLC, Baltimore, MD
     ror: 
-    index: 22
+    index: 23
   - name: Institute of Human Biology (IHB), Roche Pharma Research and Early Development, Roche Innovation Center Basel, Basel, Switzerland
     ror: 00by1q217
-    index: 23
+    index: 24
   - name: Functional Genomics Center Zurich, ETH Zurich | UZH / SIB
     ror: 
-    index: 24
+    index: 25
   - name: scalable minds GmbH, Potsdam, Germany
     ror: 
-    index: 25
+    index: 26
   - name: Department of Mechanical Engineering, University College London, London, United Kingdom
     ror: 02jx3x895
-    index: 26
+    index: 27
   - name: Advanced Research Computing Centre, University College London, United Kingdom
     ror: 02jx3x895
-    index: 27
-  - name: ScopeM, ETH Zurich, Switzerland
-    ror: 05a28rw58
     index: 28
   - name: ScopeM, ETH Zurich, Switzerland
     ror: 05a28rw58
     index: 29
+  - name: ScopeM, ETH Zurich, Switzerland
+    ror: 05a28rw58
+    index: 30
   - name: Center for Microscopy and Image Analysis, University of Zurich, Zurich 8057, Switzerland
     ror: 02crff812
-    index: 30
+    index: 31
   - name: Heidelberg University, Faculty of Biosciences, Heidelberg, Germany
     ror: 04rcqnp59
-    index: 31
+    index: 32
   - name: SciLifeLab BioImage Informatics Unit, Department of Information Technology, Uppsala University, Uppsala, Sweden
     ror: 04ev03g22
-    index: 32
+    index: 33
   - name: Department of Biosystems Science and Engineering, ETH Zurich
     ror: 05a28rw58
-    index: 33
+    index: 34
   - name: Swiss Institute of Bioinformatics
     ror: 002n09z45
-    index: 34
+    index: 35
   - name: Open Microscopy Environment (OME)
     ror: 
-    index: 35
+    index: 36
   - name: German BioImaging e.V., Germany
     ror: 05tpnw772
-    index: 36
+    index: 37
   - name: Data Science Centre, EMBL Heidelberg
     ror: 03mstc592
-    index: 37
+    index: 38
   - name: Central European Institute of Technology, Masaryk University, Brno, Czech Republic
     ror: 009nz6031
-    index: 38
+    index: 39
   - name: IT4Innovations VSB – Technical University of Ostrava, Ostrava, Czech Republic
     ror: 05x8mcb75
-    index: 39
-  - name: Corresponding author
     index: 40
+  - name: Corresponding author
+    index: 41
 date: 18 November 2024
 cito-bibliography: paper.bib
 event: OMEZarr24
