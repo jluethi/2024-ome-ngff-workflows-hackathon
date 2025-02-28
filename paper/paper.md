@@ -48,6 +48,9 @@ authors:
   - name: Stefan Hahmann
     orcid: 0000-0002-8145-7090
     affiliation: 11
+  - name: Max Hess
+    orcid: 0000-0001-9528-4445
+    affiliation: 9
   - name: Ruth Hornbachner
     orcid: 0000-0003-4912-3725
     affiliation: 9
@@ -96,44 +99,47 @@ authors:
   - name: David Stansby
     orcid: 0000-0002-1365-1908
     affiliation: 26, 27
+  - name: Fabio Steffen
+    orcid: 0000-0001-8795-2212
+    affiliation: 28
   - name: Szymon Stoma
     orcid: 0000-0001-5127-8553
-    affiliation: 19, 28
+    affiliation: 19, 29
   - name: Flurin Sturzenegger
     orcid: 0009-0000-1306-6605
-    affiliation: 29
+    affiliation: 30
   - name: Wouter-Michiel Vierdag
     orcid: 0000-0003-1666-5421
-    affiliation: 16, 30
+    affiliation: 16, 31
   - name: Jonas Windhager
     orcid: 0000-0002-2111-5291
-    affiliation: 31
+    affiliation: 32
   - name: Kevin A. Yamauchi
     orcid: 0000-0002-7818-1388
-    affiliation: 32, 33
+    affiliation: 33, 34
   - name: Igor Zubarev
     orcid: 
     affiliation: 8
   - name: Josh Moore
     orcid: 0000-0003-4028-811X
-    affiliation: 34, 35, 39
+    affiliation: 35, 36, 40
   - name: Norman Rzepka
     orcid: 0000-0002-8168-7929
-    affiliation: 25, 39
+    affiliation: 25, 40
   - name: Christian Tischer
     orcid: 0000-0003-4105-1990
-    affiliation: 36, 39
+    affiliation: 37, 40
   - name: Vladimir Ulman
     orcid: 0000-0002-4270-7982
-    affiliation: 37, 38, 39
+    affiliation: 38, 39, 40
   - name: Virginie Uhlmann
     orcid: 0000-0002-2859-9241
-    affiliation: 1, 39
+    affiliation: 1, 40
 affiliations:
   - name: BioVisionCenter, University of Zurich, Zurich, Switzerland
     ror: 02crff812
     index: 1
-  - name: Image Analysis Hub, Institut Pasteur, Paris, France
+  - name: Image Analysis Hub, Institut Pasteur, Université Paris Cité, 75015 Paris, France
     ror: 0495fxg12
     index: 2
   - name: BioImage Archive, EMBL-EBI, Hinxton, UK
@@ -213,38 +219,41 @@ affiliations:
   - name: ScopeM, ETH Zurich, Switzerland
     ror: 05a28rw58
     index: 28
+  - name: ScopeM, ETH Zurich, Switzerland
+    ror: 05a28rw58
+    index: 29
   - name: Center for Microscopy and Image Analysis, University of Zurich, Zurich 8057, Switzerland
     ror: 02crff812
-    index: 29
+    index: 30
   - name: Heidelberg University, Faculty of Biosciences, Heidelberg, Germany
     ror: 04rcqnp59
-    index: 30
+    index: 31
   - name: SciLifeLab BioImage Informatics Unit, Department of Information Technology, Uppsala University, Uppsala, Sweden
     ror: 04ev03g22
-    index: 31
+    index: 32
   - name: Department of Biosystems Science and Engineering, ETH Zurich
     ror: 05a28rw58
-    index: 32
+    index: 33
   - name: Swiss Institute of Bioinformatics
     ror: 002n09z45
-    index: 33
+    index: 34
   - name: Open Microscopy Environment (OME)
     ror: 
-    index: 34
+    index: 35
   - name: German BioImaging e.V., Germany
     ror: 05tpnw772
-    index: 35
+    index: 36
   - name: Data Science Centre, EMBL Heidelberg
     ror: 03mstc592
-    index: 36
+    index: 37
   - name: Central European Institute of Technology, Masaryk University, Brno, Czech Republic
     ror: 009nz6031
-    index: 37
+    index: 38
   - name: IT4Innovations VSB – Technical University of Ostrava, Ostrava, Czech Republic
     ror: 05x8mcb75
-    index: 38
-  - name: Corresponding author
     index: 39
+  - name: Corresponding author
+    index: 40
 date: 18 November 2024
 cito-bibliography: paper.bib
 event: OMEZarr24
