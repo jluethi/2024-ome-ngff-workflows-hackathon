@@ -172,10 +172,10 @@ affiliations:
     ror: 01rqyr540
     index: 12
   - name: Kyiv Academic University
-    ror: 01rqyr540
+    ror: 02vrpj575
     index: 13
   - name: Minnesota Supercomputing Institute, University of Minnesota, Minneapolis, MN, USA
-    ror: 
+    ror: 017zqws13
     index: 14
   - name: Imaging and Modeling Unit, Institut Pasteur, Paris, France
     ror: 0495fxg12
@@ -196,7 +196,7 @@ affiliations:
     ror: 
     index: 20
   - name: Euro-BioImaging, European Molecular Biology Laboratory (EMBL), Heidelberg, Germany
-    ror: 
+    ror: 03mstc592
     index: 21
   - name: VIB Bio Imaging Core, Gent 9052, Leuven 3000, Belgium
     ror: 05yn67m85
