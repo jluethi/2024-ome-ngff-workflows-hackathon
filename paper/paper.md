@@ -261,7 +261,7 @@ date: 18 November 2024
 cito-bibliography: paper.bib
 event: OMEZarr24
 biohackathon_name: "2024 OME-NGFF workflows hackathon"
-biohackathon_url:   "https://www.ema.uzh.ch/RM3FJ"
+biohackathon_url:   "https://www.ema.uzh.ch/en/register/ome-ngff-workflows-hackathon-2024.html"
 biohackathon_location: "Zurich, Switzerland, 2024"
 group: Preprint Github Repo
 # URL to project git repo --- should contain the actual paper.md:
