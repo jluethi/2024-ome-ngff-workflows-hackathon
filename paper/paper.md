@@ -122,19 +122,19 @@ authors:
     affiliation: 8
   - name: Josh Moore
     orcid: 0000-0003-4028-811X
-    affiliation: 36, 37, 41
+    affiliation: 36, 37
   - name: Norman Rzepka
     orcid: 0000-0002-8168-7929
-    affiliation: 27, 41
+    affiliation: 27
   - name: Christian Tischer
     orcid: 0000-0003-4105-1990
-    affiliation: 38, 41
+    affiliation: 38
   - name: Vladimir Ulman
     orcid: 0000-0002-4270-7982
-    affiliation: 39, 40, 41
+    affiliation: 39, 40
   - name: Virginie Uhlmann
     orcid: 0000-0002-2859-9241
-    affiliation: 1, 41
+    affiliation: 1
 affiliations:
   - name: BioVisionCenter, University of Zurich, Zurich 8057, Switzerland
     ror: 02crff812
@@ -255,8 +255,6 @@ affiliations:
   - name: IT4Innovations VSB – Technical University of Ostrava, Ostrava, Czech Republic
     ror: 05x8mcb75
     index: 40
-  - name: Corresponding author
-    index: 41
 date: 18 November 2024
 cito-bibliography: paper.bib
 event: OMEZarr24
@@ -280,7 +278,7 @@ authors_short: Lüthi \emph{et al.}
 
 # 1. Introduction
 
-The past years have seen growing community interest in the standardization of open and findable, accessible, interoperable, and reusable (FAIR)[@wilkinson_fair_2016] image data formats for bioimaging. A key effort in this space is the next generation file format OME-Zarr [@moore_ome-ngff_2021]. Since its first activities in 2018, the international OME-Zarr community has grown considerably and scientists from all over the world have been contributing to the file format specification, adding support to image viewers and building tooling around OME-Zarr [@moore_ome-zarr_2023]. The OME-Zarr format combines a general-purpose data format for storing large n-dimensional arrays ([Zarr](https://zarr.dev/)) with a community-defined specification for bioimage metadata representation (Next Generation File Format, NGFF). Building upon the chunked Zarr data format, OME-Zarr has specifically been designed for the storage and analysis of large bioimaging datasets in the cloud (i.e. object storage). In 2023, we organised a first [“Next generation bioimage analysis workflows hackathon”](https://www.biovisioncenter.uzh.ch/en/events/2023/hackathon_23.html) that aimed at bringing the OME-Zarr community together both to move forward on the file format specification and to implement essential supporting resources. Given the [success of this event](https://forum.image.sc/t/outcomes-of-the-next-generation-bioimage-analysis-workflows-hackathon/88733), we decided to organize an [“OME-NGFF Workflows Hackathon at the end of 2024”](https://www.ema.uzh.ch/de/register/ome-ngff-workflows-hackathon-2024.html).  
+The past years have seen growing community interest in the standardization of open and findable, accessible, interoperable, and reusable (FAIR)[@wilkinson_fair_2016] image data formats for bioimaging. A key effort in this space is the next generation file format OME-Zarr [@moore_ome-ngff_2021]. Since its first activities in 2018, the international OME-Zarr community has grown considerably and scientists from all over the world have been contributing to the file format specification, adding support to image viewers and building tooling around OME-Zarr [@moore_ome-zarr_2023]. The OME-Zarr format combines a general-purpose data format for storing large n-dimensional arrays ([Zarr](https://zarr.dev/)) with a community-defined specification for bioimage metadata representation (Next Generation File Format, NGFF). Building upon the chunked Zarr data format, OME-Zarr has specifically been designed for the storage and analysis of large bioimaging datasets in the cloud (i.e. object storage). In 2023, we organised a first [“Next generation bioimage analysis workflows hackathon”](https://www.biovisioncenter.uzh.ch/en/events/2023/hackathon_23.html) that aimed at bringing the OME-Zarr community together both to move forward on the file format specification and to implement essential supporting resources. Given the [success of this event](https://forum.image.sc/t/outcomes-of-the-next-generation-bioimage-analysis-workflows-hackathon/88733), we decided to organize an [“OME-NGFF Workflows Hackathon at the end of 2024”](https://www.ema.uzh.ch/en/register/ome-ngff-workflows-hackathon-2024.html).  
 
 The 2024 OME-NGFF Workflows Hackathon was focused on 4 main topics (see Figure 1):  
 
@@ -319,7 +317,7 @@ This introductory session revealed that, although the Zarr format might be compo
 As a first contribution to improved documentation, we compiled an up-to-date survey of tools available to create and work with OME-Zarr data. We submitted it as a [PR to update the tools documentation page](https://github.com/ome/ngff/pull/273), which has led to [an updated tools page with a table layout](https://ngff.openmicroscopy.org/tools/index.html).
 
 ### 2.1.2 The NGFF RFC process
-The next-generation file formats (NGFF) process is an effort to specify and standardize a modern, scalable and interoperable file format for bioimage data. The NGFF specification (hereafter referred to as “spec” for short) has led to the creation of the OME-Zarr format. We began the hackathon with an overview of the recent addition to the NGFF process of the [“Request for Comment” (RFC) process](https://doi.org/10.5281/zenodo.14505620) outlined in [RFC-1](https://ngff.openmicroscopy.org/rfc/1/). It highlighted the history of the OME-Zarr file format development as well as the challenges of defining common representations for the metadata required in bioimaging (e.g., storing pixel sizes in a common format). **The RFC process was introduced in 2024 to streamline decision-making in a growing community.**  
+The next-generation file formats (NGFF) process is an effort to specify and standardize a modern, scalable and interoperable file format for bioimage data. The NGFF specification (hereafter referred to as “spec” for short) has led to the creation of the OME-Zarr format. We began the hackathon with an overview of the recent addition to the NGFF process of the ["Request for Comment" (RFC) process](https://doi.org/10.5281/zenodo.14505620) outlined in [RFC-1](https://ngff.openmicroscopy.org/rfc/1/). It highlighted the history of the OME-Zarr file format development as well as the challenges of defining common representations for the metadata required in bioimaging (e.g., storing pixel sizes in a common format). **The RFC process was introduced in 2024 to streamline decision-making in a growing community.**  
 
 Discussions explored ways to lower the barrier to proposing RFCs. Notable suggestions included providing an RFC pull request template and dedicating time to writing up RFCs together at future hackathons. An important discussion point focused on the definition of the scope of RFCs, and on the guiding principles deciding between a topic being proposed as an RFC or as a GitHub pull request (PR). We agreed that any change to the spec that would require changes in any implementation (i.e. software that reads or writes OME-Zarr) should become an RFC. In contrast, minor fixes without implementation implications should still be submitted as Github Issues and Pull requests (PRs) and will be reviewed by the OME-Zarr editor(s), currently Josh Moore as defined in RFC-1. Minor PRs turning into broader required changes would then trigger the editors to highlight the need for an RFC.  
 
@@ -459,7 +457,7 @@ We sought to understand how different parameter choices impact real-world perfor
  	
 To address the challenges of large-than-memory computing, we applied a simple segmentation task to a real-world bioimaging dataset consisting of a light sheet microscopy image collection. The collection was composed of multiple TIFF files, where each file represented a single 3D volume ((279, 4, 91, 554, 928) dimensions corresponding to time, channel, z, y, and x, for a total size of ~50 GB), together constituting a 4-channel volumetric time-series image (see figure Figure 7). The test data is available on zenodo [@moos_light_2025]. Splitting a large image into a collection of TIFF files in this way is commonly done in bioimaging for easier data handling. Relying on this dataset, our goal was to identify good practices in terms of performance and memory management.  
 
-Our workflow consisted of three primary steps. First, TIFF files were read and concatenated along the time and channel dimensions into a single Dask array. The resulting Dask array was chunked along the time and channel dimensions, with each chunk corresponding to a single 3D volume (zyx). Second, Otsu thresholding, as implemented in Dask, was applied to the dataset in a chunk-wise manner. A chunk-wise parallelisation appeared to be appropriate in this scenario since each chunk corresponded to a single 3D volume and the threshold was thus computed per volume as intended. In other scenarios where input chunking schemes may not align well with the applied process’ expected input requirements, a rechunking step would be needed at this stage to ensure optimal read/write performance. Finally, the segmentation output was saved to OME-Zarr. Different output chunk sizes were tested, requiring rechunking of the Dask array prior to saving. Additionally, region-based parallelization was implemented, where batches of chunks (regions) were saved in parallel. The implementation of each of these steps is available in a GitHub repository.  
+Our workflow consisted of three primary steps. First, TIFF files were read and concatenated along the time and channel dimensions into a single Dask array. The resulting Dask array was chunked along the time and channel dimensions, with each chunk corresponding to a single 3D volume (zyx). Second, Otsu thresholding, as implemented in Dask, was applied to the dataset in a chunk-wise manner. A chunk-wise parallelisation appeared to be appropriate in this scenario since each chunk corresponded to a single 3D volume and the threshold was thus computed per volume as intended. In other scenarios where input chunking schemes may not align well with the applied process’ expected input requirements, a rechunking step would be needed at this stage to ensure optimal read/write performance. Finally, the segmentation output was saved to OME-Zarr. Different output chunk sizes were tested, requiring rechunking of the Dask array prior to saving. Additionally, region-based parallelization was implemented, where batches of chunks (regions) were saved in parallel. The implementation of each of these steps is available in a [GitHub repository](https://github.com/fmi-basel/zarr_parallel_processing).  
 
 ![The example data used in benchmarks](figures/figure7.png)
 
