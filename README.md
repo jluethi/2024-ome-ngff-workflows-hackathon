@@ -1,7 +1,10 @@
 # BioHackrXiv Publication Template
 
-Minimal example of a [BioHackrXiv](https://biohackrxiv.org/) publication that can be generated with the
-[Preview Service](http://preview.biohackrxiv.org/).
+Preprint repository for the [2024 OME-NGFF workflows hackathon](https://www.ema.uzh.ch/en/register/ome-ngff-workflows-hackathon-2024.html).
+
+----
+
+## Usage of the repo to create a [BioHackrXiv](https://biohackrxiv.org/) publication
 
 ## Step 1: Clone this Template Repository
 
