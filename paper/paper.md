@@ -92,31 +92,31 @@ authors:
     affiliation: 24
   - name: Leonardo Schwarz
     orcid: 0009-0003-1828-6924
-    affiliation: 25
+    affiliation: 25, 35
   - name: Hannes M. Spitz
     orcid: 0009-0003-0010-1995
-    affiliation: 26
+    affiliation: 27
   - name: David Stansby
     orcid: 0000-0002-1365-1908
-    affiliation: 27, 28
+    affiliation: 28, 29
   - name: Fabio Steffen
     orcid: 0000-0001-8795-2212
-    affiliation: 29
+    affiliation: 30
   - name: Szymon Stoma
     orcid: 0000-0001-5127-8553
-    affiliation: 20, 30
+    affiliation: 20, 31
   - name: Flurin Sturzenegger
     orcid: 0009-0000-1306-6605
-    affiliation: 31
+    affiliation: 32
   - name: Wouter-Michiel Vierdag
     orcid: 0000-0003-1666-5421
-    affiliation: 17, 32
+    affiliation: 17, 33
   - name: Jonas Windhager
     orcid: 0000-0002-2111-5291
-    affiliation: 33
+    affiliation: 34
   - name: Kevin A. Yamauchi
     orcid: 0000-0002-7818-1388
-    affiliation: 34, 35
+    affiliation: 35, 26
   - name: Igor Zubarev
     orcid: 0009-0008-6705-0949
     affiliation: 8
@@ -207,38 +207,38 @@ affiliations:
   - name: Institute of Human Biology (IHB), Roche Pharma Research and Early Development, Roche Innovation Center Basel, Basel, Switzerland
     ror: 00by1q217
     index: 24
-  - name: Functional Genomics Center Zurich, ETH Zurich | UZH / SIB
+  - name: Functional Genomics Center Zurich, ETH Zurich | UZH
     ror: 
     index: 25
-  - name: scalable minds GmbH, Potsdam, Germany
-    ror: 
-    index: 26
-  - name: Department of Mechanical Engineering, University College London, London, United Kingdom
-    ror: 02jx3x895
-    index: 27
-  - name: Advanced Research Computing Centre, University College London, United Kingdom
-    ror: 02jx3x895
-    index: 28
-  - name: University Children’s Hospital Zurich
-    ror: 035vb3h42
-    index: 29
-  - name: ScopeM, ETH Zurich, Switzerland
-    ror: 05a28rw58
-    index: 30
-  - name: Center for Microscopy and Image Analysis, University of Zurich, Zurich 8057, Switzerland
-    ror: 02crff812
-    index: 31
-  - name: Heidelberg University, Faculty of Biosciences, Heidelberg, Germany
-    ror: 04rcqnp59
-    index: 32
-  - name: SciLifeLab BioImage Informatics Unit, Department of Information Technology, Uppsala University, Uppsala, Sweden
-    ror: 04ev03g22
-    index: 33
-  - name: Department of Biosystems Science and Engineering, ETH Zurich
-    ror: 05a28rw58
-    index: 34
   - name: Swiss Institute of Bioinformatics
     ror: 002n09z45
+    index: 26
+  - name: scalable minds GmbH, Potsdam, Germany
+    ror: 
+    index: 27
+  - name: Department of Mechanical Engineering, University College London, London, United Kingdom
+    ror: 02jx3x895
+    index: 28
+  - name: Advanced Research Computing Centre, University College London, United Kingdom
+    ror: 02jx3x895
+    index: 29
+  - name: University Children’s Hospital Zurich
+    ror: 035vb3h42
+    index: 30
+  - name: ScopeM, ETH Zurich, Switzerland
+    ror: 05a28rw58
+    index: 31
+  - name: Center for Microscopy and Image Analysis, University of Zurich, Zurich 8057, Switzerland
+    ror: 02crff812
+    index: 32
+  - name: Heidelberg University, Faculty of Biosciences, Heidelberg, Germany
+    ror: 04rcqnp59
+    index: 33
+  - name: SciLifeLab BioImage Informatics Unit, Department of Information Technology, Uppsala University, Uppsala, Sweden
+    ror: 04ev03g22
+    index: 34
+  - name: Department of Biosystems Science and Engineering, ETH Zurich
+    ror: 05a28rw58
     index: 35
   - name: Open Microscopy Environment (OME)
     ror: 
