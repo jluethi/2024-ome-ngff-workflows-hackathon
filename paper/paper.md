@@ -369,7 +369,7 @@ Discussions revolved around how to best achieve the goals of OME-Zarr with singl
 | Rarr        | R                    | No                            | - |
 
 **Table 1:** Surveyed Zarr implementations and their capabilities to read single archive files.
-
+  
   
 To ensure file format compatibility in practice, both the archive file format and the detection of OME-Zarr within an archive file need to be specified. We quickly concluded that ZIP should be the archive file format of choice due to its widespread adoption and support (including most operating systems), and its use of a "central directory file header" (CDFH; beneficial for remote access, e.g. when using HTTP range requests). Drawbacks of ZIP (e.g. low compression ratios, depending on the codec) can mostly be alleviated by OME-Zarr features (e.g. Zarr compression), with the exception of support for efficiently appending/deleting archive file contents, though this may not pose a significant concern for small datasets. **We recommend that ZIP-enabled OME-Zarr writers create uncompressed ZIP64 files (to enable in-place editing), and that ZIP-enabled OME-Zarr readers may additionally support reading ZIP64 files compressed with commonly used compression codecs (e.g. to support ZIP archives that were not generated with OME-Zarr-specific tooling).**  
 
