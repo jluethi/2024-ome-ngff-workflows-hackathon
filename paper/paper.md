@@ -487,6 +487,15 @@ Although the long-term success of the OME-Zarr project will demand consistent fi
 
 ## Acknowledgements
 This work took place at the BioVisionCenter at the University of Zurich as part of the OME-NGFF Workflows Hackathon 2024. We would like to thank all of the hackathon organisers (Joel Lüthi, Josh Moore, Christian Tischer, Vladimir Ulman, Norman Rzepka, Eric Perlman, Lorenzo Cerrone, Ethel Mendocilla Sato, Virginie Uhlmann). German BioImaging made the hackathon possible through funding provided by NFDI4BIOIMAGE, DFG grant number NFDI 46/1, project number 501864659. We’d like to specifically thank Janina Hanne from German Bioimaging for her support with travel grants. The hackathon was also supported by grant 2024-342803 from the Chan Zuckerberg Initiative DAF, an advised fund of Silicon Valley Community Foundation, and an industry sponsorship from Yokogawa.  
-Support for individual participants: DS was supported by grant 2022-316777 from the Chan Zuckerberg Initiative DAF, an advised fund of Silicon Valley Community Foundation. SS and FM were supported by DARTS ARPA-H.
+Support for individual participants: DS was supported by grant 2022-316777 from the Chan Zuckerberg Initiative DAF, an advised fund of Silicon Valley Community Foundation. SS and FM were supported by the United States Government, ARPA-H, DARTS. The views and conclusions contained in this document are those of the authors and should not be interpreted as representing the official policies, either expressed or implied, of the United States Government.
+
+## Conflicts of Interest
+Many of the authors have been involved with the development of the OME-Zarr specification and tools in its ecosystem already before the hackathon.
+Norman Rzepka and Hannes Spitz are affiliated with scalable minds, a company that builds, delivers, supports and integrates image analysis solutions. Norman Rzepka owns equity in scalable minds.
+Matthew McCormick is the President of the Insight Software Consortium, a  NumFOCUS fiscally sponsored project that support the Insight Toolkit (ITK), a toolkit used in the OME-Zarr community, and currently works at Fideus Labs, which provides professional scientific software services including support for the OME-Zarr ecosystem.
+Szymon Stoma and Filip Mroz are affiliated with Histopixel, a software house specializing in bioimage analysis. Szymon Stoma owns equity in Histopixel.
+Maximilian Schulz works as a research software engineer at the
+Institute of Human Biology (IHB) as part of Roche’s Pharma Research and Early Development (pRED).
+Eric Perlman is the principal of Yikes LLC, a consultancy providing data management support to individual labs in the life science, including the use of OME-Zarr as a key component.
 
 ## References
